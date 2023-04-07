@@ -1,6 +1,7 @@
-import pygame
-import math
-import colorsys
+import pygame   # Useful for the GUI 
+import math     # Useful for the math 
+import colorsys # Useful Color grading 
+
 
 pygame.init()
 
@@ -26,7 +27,7 @@ y_offset = rows / 2
 A, B = 0, 0  # rotating animation
 
 theta_spacing = 10
-phi_spacing = 1 # for faster rotation change to 2, 3 or more, but first change 86, 87 lines as commented
+phi_spacing = 1 # for faster rotation change to 2, 3 or more, displays with higher refresh rate the better  
 
 chars = ".,-~:;=!*#$@"  # luminance index
 
@@ -55,6 +56,8 @@ while run:
 
     screen.fill((black))
 
+    # The useful math import discuss 
+  
     z = [0] * screen_size  # Donut. Fills donut space
     b = [' '] * screen_size  # Background. Fills empty space
 
