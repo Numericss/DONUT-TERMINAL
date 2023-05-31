@@ -5,9 +5,16 @@ import colorsys # Useful Color grading
 
 pygame.init()
 
+# Set the window title 
+pygame.display.set_caption("Terminal Donut")
+
+# Set fucntion to convert HSV to RGB 
+
 white = (255, 255, 255)
 black = (0, 0, 0)
 hue = 0
+
+# Set 'reslution' of terminal window
 
 WIDTH = 1920
 HEIGHT = 1080
